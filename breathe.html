@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+    <style>
+        @keyframes ani{
+            from {
+                height:125px;
+            width: 125px;
+            border-radius:50%;
+            background-color: rgb(142, 223, 255);
+            border: 10px white solid
+            }
+            to {
+                height:325px;
+            width: 325px;
+            border-radius:50%;
+            background-color:rgb(142, 223, 255);
+            border: 5px white solid;
+            }
+        }
+        .btn{
+            height:125px;
+            width: 125px;
+            border-radius:50%;
+            background-color: rgb(142, 223, 255);
+        }
+        .btn:hover{
+            animation-duration: 8s;
+            animation-name: ani;
+            animation-iteration-count: 7;
+            animation-direction: alternate;
+            animation-timing-function: ease-in-out;
+            animation-fill-mode: backwards;
+        }
+        .top{
+            height:200px;
+        }
+        .mid{
+            height:400px;
+        }
+        .bttm{
+            height:100px;
+        }
+        body{
+            background-color: rgb(42, 162, 241);
+        }
+        .top{
+            text-align: center;
+            color:whitesmoke
+        }
+        h1{
+            font-size: 50px;
+        }
+        .about{
+            height:50px;
+            width:150px;
+            border-radius:25px;
+            color:white;
+            background-color: rgb(42, 162, 241);
+            border: 2px solid white
+        }
+    </style>
+</head>
+<body>
+    <div class="row top justify-content-center align-items-end">
+        <h1>
+            <strong>Just Breathe.</strong>
+        </h1>
+        <p>
+            <strong>
+                Tap on the circle to begin
+            </strong>
+        </p>
+    </div>
+    <div class="row mid justify-content-center align-items-center">
+        <button type="button" class="btn"></button>
+    </div>
+    <div class="row bttm justify-content-center align-items-center">
+        <button type="button" class="about" onclick="alert('Just Breathe is a website designed to help you control your breathing. Simply match your breathing with the circle to begin meditation.')"><strong>What's This?</strong></button>
+    </div>
+    <div class="row bttm justify-content-center align-items-top">
+        <button type="button" class="about" onclick="alert('Created by jongee | Version: 1.0')"><strong>About</strong></button>
+    </div>
+</body>
+</html>
