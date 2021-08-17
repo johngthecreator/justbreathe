@@ -1,4 +1,1 @@
 # justbreathe
----
-permalink: /breathe.html
----
