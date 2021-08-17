@@ -1,1 +1,2 @@
 # justbreathe
+permalink: /breathe.html
