@@ -28,7 +28,7 @@
             background-color: rgb(142, 223, 255);
         }
         .btn:hover{
-            animation-duration: 5s;
+            animation-duration: 4s;
             animation-name: ani;
             animation-iteration-count: 7;
             animation-direction: alternate;
@@ -60,7 +60,14 @@
             border-radius:25px;
             color:white;
             background-color: rgb(42, 162, 241);
-            border: 2px solid white
+            border: 2px solid white;
+        }
+        .ext{
+            background-color: rgb(42, 162, 241);
+            color:white;
+            text-align: center;
+            align-items: center;
+            height: 100vh;
         }
     </style>
 </head>
@@ -79,10 +86,14 @@
         <button type="button" class="btn"></button>
     </div>
     <div class="row bttm justify-content-center align-items-center">
-        <button type="button" class="about" onclick="alert('Just Breathe is a website designed to help you control your breathing. Simply match your breathing with the circle to begin meditation.')"><strong>What's This?</strong></button>
+        <button type="button" class="about" id="how"><strong>What's This?</strong></button>
     </div>
     <div class="row bttm justify-content-center align-items-top">
-        <button type="button" class="about" onclick="alert('Created by jongee | Version: 1.0')"><strong>About</strong></button>
+        <button class="about" id="about"><strong>About</strong></button>
     </div>
+    <div id="extra">
+
+    </div>
+    <script src="breath.js"></script>
 </body>
 </html>
